@@ -1,14 +1,13 @@
 {
-  "name": "@lottiefiles/lottie-player",
-  "version": "2.0.11",
+  "name": "yukon-green",
+  "version": "0.0.1",
   "description": "Lottie animation and Telegram Sticker player web components.",
   "main": "dist/lottie-player.js",
   "module": "dist/lottie-player.esm.js",
   "types": "dist/lottie-player.d.ts",
-  "homepage": "https://lottiefiles.com/web-player",
-  "repository": "https://github.com/LottieFiles/lottie-player.git",
-  "bugs": "https://github.com/LottieFiles/lottie-player/issues",
-  "author": "Jawish Hameed <jawish@lottiefiles.com>",
+  "repository": "https://github.com/samuelOsborne/lottie-player.git",
+  "bugs": "https://github.com/samuelOsborne/lottie-player/issues",
+  "author": "Sam Osborne",
   "license": "MIT",
   "scripts": {
     "prestart": "node -p \"'export const LOTTIE_PLAYER_VERSION = ' + JSON.stringify(require('./package.json').version) + '; \\n' + 'export const LOTTIE_WEB_VERSION = ' + JSON.stringify(require('./package.json').dependencies['lottie-web']) + ';'\" > src/versions.ts",
@@ -46,7 +45,6 @@
     "@commitlint/config-conventional": "^16.0.0",
     "@cypress/code-coverage": "^3.9.12",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
-    "@lottiefiles/eslint-plugin": "^3.0.0",
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
@@ -80,24 +78,14 @@
     "semantic-release": "^19.0.2",
     "shx": "^0.3.4",
     "source-map-support": "^0.5.21",
-    "ts-node": "^10.4.0",
+    "ts-node": "^10.9.2",
     "typescript": "^4.5.5",
     "unicode-canonical-property-names-ecmascript": "^2.0.0"
   },
   "files": [
     "dist/"
   ],
-  "keywords": [
-    "lottie",
-    "animation",
-    "lottiefiles",
-    "web component",
-    "component",
-    "lit-element",
-    "player",
-    "telegram sticker",
-    "tgs"
-  ],
+  "keywords": [],
   "browserslist": [
     "> 3%"
   ],

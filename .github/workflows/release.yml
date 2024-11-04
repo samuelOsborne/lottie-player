@@ -10,6 +10,8 @@ jobs:
     timeout-minutes: 15
     permissions:
       contents: read
+      id-token: write      # Required for provenance
+      packages: write      # Required for publishing
 
     strategy:
       matrix:
@@ -56,10 +58,10 @@ jobs:
     name: Release npm
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-      id-token: write      # Required for provenance
-      packages: write      # Required for publishing
+    # permissions:
+    #   contents: read
+    #   id-token: write      # Required for provenance
+    #   packages: write      # Required for publishing
 
     strategy:
       matrix:
@@ -95,10 +97,11 @@ jobs:
     needs: build
     name: Release gpr
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write      # Required for provenance
-      packages: write      # Required for publishing
+
+    # permissions:
+    #   contents: read
+    #   id-token: write      # Required for provenance
+    #   packages: write      # Required for publishing
 
     strategy:
       matrix:

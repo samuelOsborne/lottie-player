@@ -1,6 +1,6 @@
 {
   "name": "yukon-green",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Lottie animation and Telegram Sticker player web components.",
   "main": "dist/lottie-player.js",
   "module": "dist/lottie-player.esm.js",

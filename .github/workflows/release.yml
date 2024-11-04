@@ -127,6 +127,7 @@ jobs:
       - run: npm publish --provenance --registry=https://npm.pkg.github.com/ --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GH_WF_TEST }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
           # NODE_AUTH_TOKEN: ${{ secrets.GPR_TOKEN }}
           # GIT_COMMIT: ${{ github.sha }}
           # GIT_AUTHOR_NAME: ${{ secrets.GIT_AUTHOR_NAME }}

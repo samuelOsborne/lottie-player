@@ -121,7 +121,7 @@ jobs:
       - run:
           echo "//npm.pkg.github.com:_authToken=${{ secrets.GPR_TOKEN }}" >
           ~/.npmrc
-      - run: npm publish --registry=https://npm.pkg.github.com/
+      - run: npm publish --provenance --registry=https://npm.pkg.github.com/ --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GH_WF_TEST }}
           # NODE_AUTH_TOKEN: ${{ secrets.GPR_TOKEN }}

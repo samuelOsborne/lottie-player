@@ -119,7 +119,7 @@ jobs:
         # env:
         #   NODE_AUTH_TOKEN: ${{ secrets.GPR_TOKEN }}
       - run:
-          echo "//npm.pkg.github.com:_authToken=${{ secrets.GPR_TOKEN }}" >
+          echo "//npm.pkg.github.com:_authToken=${{ secrets.GH_WF_TEST }}" >
           ~/.npmrc
       - run: npm publish --provenance --registry=https://npm.pkg.github.com/ --access public
         env:

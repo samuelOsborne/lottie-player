@@ -5,8 +5,8 @@
   "main": "dist/lottie-player.js",
   "module": "dist/lottie-player.esm.js",
   "types": "dist/lottie-player.d.ts",
-  "repository": "https://github.com/samuelOsborne/lottie-player.git",
-  "bugs": "https://github.com/samuelOsborne/lottie-player/issues",
+  "repository": "https://github.com/samuelOsborne/yukon-green.git",
+  "bugs": "https://github.com/samuelOsborne/yukon-green/issues",
   "author": "Sam Osborne",
   "license": "MIT",
   "scripts": {

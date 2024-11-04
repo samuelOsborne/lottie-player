@@ -81,8 +81,8 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
       - run: npm publish --provenance --access public
         env:
-          NPM_TOKEN: ${{ secrets.NPMJS_TOKEN }}
-          # NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
+          # NPM_TOKEN: ${{ secrets.NPMJS_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
           # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # NPM_TOKEN: ${{ secrets.NPMJS_TOKEN }}
           # GIT_COMMIT: ${{ github.sha }}

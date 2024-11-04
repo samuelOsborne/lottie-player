@@ -1,6 +1,6 @@
 {
   "name": "yukon-green",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Lottie animation and Telegram Sticker player web components.",
   "main": "dist/lottie-player.js",
   "module": "dist/lottie-player.esm.js",
@@ -23,7 +23,7 @@
     "release": "semantic-release",
     "lint": "eslint . --ext .ts,.tsx,.js",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
-    "serve": "node ./cypress/pages/server.js -p 8000 &",
+    "serve": "node --openssl-legacy-provider ./cypress/pages/server.js -p 8000 &",
     "start-cypress": "yarn run cypress run && npx nyc report --reporter=text-summary",
     "run-tests": "yarn run build-with-coverage && yarn run serve && yarn run start-cypress",
     "postrun-tests": "kill $(lsof -t -i:8000)"
